@@ -1,3 +1,7 @@
+* {
+  font-family: Roboto;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +23,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  height: 55vh;
   width: 70vw;
   padding: 15px;
   border-radius: 5px;
@@ -36,9 +40,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,23 +57,40 @@ body {
 
 .produto > h3 {
   color: #4286f4;
+  font-size: 23px;
 }
 
 .produto > img {
   height: 70px;
   width: 70px;
+  margin-bottom: 5px;
 }
 
 .produto > p {
-  width: 70%;
+  width: 75%;
   text-align: center;
+  height: 15vh;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .produto > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #4286f4;
+  margin-top: -30px;
+}
+
+.produto > div > p {
+  padding-top: 13px;
+}
+
+.produto > div h3 {
+  font-size: 30px;
 }
 
 .produto > div span {

@@ -1,5 +1,8 @@
 $color-primary: #4286f4;
-
+$font-title: Roboto;
+*{
+    font-family: $font-title;
+}
 body{
     display:flex;
     justify-content: center;
@@ -10,7 +13,7 @@ body{
 .container{
     display:flex;
     justify-content: center;
-    height: 50vh;
+    height: 55vh;
     width: 70vw;
     padding: 15px;
     border-radius: 5px;
@@ -21,11 +24,11 @@ body{
 .produto{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-basis: 33%;
     border-radius: 10px;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .produto:hover{
@@ -34,20 +37,34 @@ body{
 
 .produto>h3{
     color:$color-primary;
+    font-size: 23px;
 }
 
 .produto > img{
     height: 70px;
     width: 70px;
+    margin-bottom: 5px;
 }
 .produto > p{
-    width: 70%;
+    width: 75%;
     text-align: center;
+    height: 15vh;
+    margin-top: -5px;
+    color: rgba(0,0,0,0.4);
 }
 
 .produto > div{
     display:flex;
+    justify-content: center;
     color: $color-primary;
+    margin-top: -30px;
+}
+.produto > div > p{
+    padding-top: 13px;
+}
+
+.produto > div h3{
+    font-size: 30px;
 }
 .produto > div span{
     font-size: 12px;
