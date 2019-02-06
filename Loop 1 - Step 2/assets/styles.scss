@@ -1,9 +1,9 @@
 
+@import 'reset';
 $default-font: 'Roboto';
 $primary-color: rgba(89, 139, 221, 1);
+
 *{
-    padding: 0px;
-    margin: 0px;
     font-family: $default-font;
 }
 body{
