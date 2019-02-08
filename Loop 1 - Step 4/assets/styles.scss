@@ -37,6 +37,13 @@ body{
             margin-right: 10px;
         }
     }
+    img{
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+            cursor:pointer;
+        }
+    }
 }
 
 .body{
@@ -75,10 +82,11 @@ body{
             font-size: 11px;
             color: #ccc;
             margin-bottom: 2px;
-            font-weight: bold;
+            font-weight: bold;        
         }
         div{
             padding: 10px;
+            border-radius: 3px;
             &>p{
                 font-size: 13px;
                 font-weight: 500;

@@ -53,6 +53,15 @@ body {
   margin-right: 10px;
 }
 
+.header img {
+  opacity: 0.5;
+}
+
+.header img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .body {
   padding: 15px;
 }
@@ -115,6 +124,7 @@ body {
 
 .body-messages .message div {
   padding: 10px;
+  border-radius: 3px;
 }
 
 .body-messages .message div > p {
