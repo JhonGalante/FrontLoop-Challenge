@@ -1,5 +1,8 @@
 @import 'reset';
 
+*{
+    font-family: 'Roboto';
+}
 body{
     background: #4d515d;
     display:flex;
@@ -27,7 +30,7 @@ body{
         h1{
             margin-bottom: 15px;
             font-size: 35px;
-            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
         }
         p{
             color: rgba(0,0,0,.3);
@@ -81,7 +84,6 @@ body{
         color: rgba(0,0,0,.5);
         font-weight: 900;
         font-size: 11px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         &:hover{
             color: black;
             cursor: pointer;
