@@ -1,0 +1,133 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 200px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  font-size: 15px;
+}
+
+nav ul li input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  width: 142px;
+  padding-bottom: 5px;
+}
+
+nav ul li input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+nav ul li input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+nav ul li input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+nav ul li input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header .header_description h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+header .header_description div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  margin-bottom: 35px;
+}
+
+header .header_description div hr {
+  margin-right: 20px;
+}
+
+header .header_description div p {
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+}
+
+header .header_description button {
+  border: none;
+  background-color: #ea625c;
+  padding: 9px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .header_img {
+  margin-right: -240px;
+  margin-top: -9px;
+}
+
+header .header_img img {
+  width: 550px;
+  height: 570px;
+}
+
+* {
+  font-family: 'Roboto';
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 15vh 85vh 60vh 40vh;
+      grid-template-rows: 15vh 85vh 60vh 40vh;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=main.css.map */
