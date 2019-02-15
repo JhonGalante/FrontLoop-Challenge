@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'nav';
+@import 'header';
+@import 'main-font';
+
+body{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15vh 85vh 60vh 40vh;
+    overflow-x: hidden;
+}

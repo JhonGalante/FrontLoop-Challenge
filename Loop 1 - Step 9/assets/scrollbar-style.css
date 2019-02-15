@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: transparent;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #ccc;
+}
+/*# sourceMappingURL=scrollbar-style.css.map */
