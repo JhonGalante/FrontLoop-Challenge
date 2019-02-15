@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  height: 78vh;
+  height: 76vh;
   width: 65vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,8 +161,20 @@ body {
   margin-right: 10px;
 }
 
+.main .footer .menu .comments:hover {
+  cursor: pointer;
+}
+
+.main .footer .menu .comments:hover p {
+  color: black;
+}
+
 .main .footer .menu .comments * {
   margin-right: 7px;
   color: #ccc;
+}
+
+.main .footer .menu :last-child:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
