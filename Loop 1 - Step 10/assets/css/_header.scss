@@ -2,7 +2,8 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 200px;
+    padding-left: 14vw;
+    margin-top: -15px;
     border-bottom: 1px solid rgba(0,0,0,.15);
     .header_description{
         h2{
@@ -28,14 +29,18 @@ header{
             padding: 9px 15px;
             color: #fff;
             font-weight: bold;
+            &:hover{
+                background-color: #e32a22;
+                cursor: pointer;
+            }
         }
     }
     .header_img{
-        margin-right: -240px;
-        margin-top:-9px;
+        margin-right: -290px;
+        margin-bottom: -3px;
         img{
-            width: 550px;
-            height: 570px;
+            width: 690px;
+            height: 92vh;
         }
     }
 }

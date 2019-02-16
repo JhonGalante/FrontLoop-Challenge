@@ -2,28 +2,44 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 200px;
-
+    padding: 0px 20% 0px 15%;
+    img{
+        padding-right: 40px;
+    }
     ul{
         display:flex;
         list-style: none;
         li{
             margin-right: 20px;
+            padding-bottom: 5px;
             color: rgba(0,0,0,0.3);
             font-weight: 900;
             font-size: 15px;
+            
             input{
                 border:none;
-                border-bottom: 1px solid rgba(0,0,0,.4);
+                border-bottom: 1px solid rgba(0,0,0,.2);
                 outline:none;
                 width: 142px;
                 padding-bottom: 5px;
+                &:focus{
+                    border-bottom: 1px solid rgba(0,0,0,.6);
+                }
                 &::placeholder{
                     color: rgba(0,0,0,0.4);
                     font-weight: 900;
                     font-size: 13px;
                 }
             }
+        }
+
+        li:nth-child(1), li:nth-child(2), li:nth-child(3){
+            &:hover{
+                border-bottom: 2px solid rgba(0,0,0,.2);
+                color: black;
+                cursor: pointer;
+            }
+            
         }
     }
 }

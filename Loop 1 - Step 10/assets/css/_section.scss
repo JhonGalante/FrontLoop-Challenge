@@ -1,0 +1,103 @@
+section{
+    margin-top: 6.5vh;
+    padding-left: 16vw;
+    padding-right: 13vw;
+}
+
+.section_info_blocks{
+    display:flex;
+    justify-content: space-between;
+    width: 900px;
+    .block{
+        width: 355px;
+        h4{
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 25px;
+        }
+        div{
+            display:flex;
+            margin-top: 5px;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+            }
+            &:hover .line{
+                width: 50px;
+                transition: 0.3s;
+            }
+            .dot{
+                width: 4px;
+                margin-right: 8px;
+                height: 4px;
+                background-color: rgba(0,0,0,.2);
+            }
+            .line{
+                height: 2px;
+                width: 35px;
+                background-color: #ea625c;
+                margin-right: 10px;
+                margin-top: 0px;
+            }
+            a{
+                color:#ea625c;
+                font-weight: 900;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .block:nth-child(1), .block:nth-child(2){
+        margin-right: 60px;
+    }
+}
+
+.section_nike_blocks{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 1000px;
+    .block_info{
+        width: 445px;
+        padding-top: 25vh;
+        h2{
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+        div{
+            display:flex;
+            margin-bottom: 40px;
+            hr{
+                margin-right: 30px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(0,0,0,.3);
+            }
+        }
+        button{
+            border:none;
+            padding: 10px 15px;
+            font-weight: 900;
+            color: #fff;
+            background-color:#ea625c;
+            &:hover{
+                background-color: #e32a22;
+                cursor: pointer;
+            }
+        }
+    }
+    .block_img{
+        height: 98vh;
+        width: 450px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

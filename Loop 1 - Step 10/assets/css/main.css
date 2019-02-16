@@ -13,7 +13,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 200px;
+  padding: 0px 20% 0px 15%;
+}
+
+nav img {
+  padding-right: 40px;
 }
 
 nav ul {
@@ -25,6 +29,7 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
+  padding-bottom: 5px;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 900;
   font-size: 15px;
@@ -32,10 +37,14 @@ nav ul li {
 
 nav ul li input {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
   width: 142px;
   padding-bottom: 5px;
+}
+
+nav ul li input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 nav ul li input::-webkit-input-placeholder {
@@ -62,6 +71,12 @@ nav ul li input::placeholder {
   font-size: 13px;
 }
 
+nav ul li:nth-child(1):hover, nav ul li:nth-child(2):hover, nav ul li:nth-child(3):hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  color: black;
+  cursor: pointer;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +87,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 200px;
+  padding-left: 14vw;
+  margin-top: -15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -107,27 +123,203 @@ header .header_description button {
   font-weight: bold;
 }
 
+header .header_description button:hover {
+  background-color: #e32a22;
+  cursor: pointer;
+}
+
 header .header_img {
-  margin-right: -240px;
-  margin-top: -9px;
+  margin-right: -290px;
+  margin-bottom: -3px;
 }
 
 header .header_img img {
-  width: 550px;
-  height: 570px;
+  width: 690px;
+  height: 92vh;
 }
 
 * {
   font-family: 'Roboto';
 }
 
+section {
+  margin-top: 6.5vh;
+  padding-left: 16vw;
+  padding-right: 13vw;
+}
+
+.section_info_blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 900px;
+}
+
+.section_info_blocks .block {
+  width: 355px;
+}
+
+.section_info_blocks .block h4 {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.section_info_blocks .block p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section_info_blocks .block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_info_blocks .block div:hover {
+  cursor: pointer;
+}
+
+.section_info_blocks .block div:hover .line {
+  width: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section_info_blocks .block div .dot {
+  width: 4px;
+  margin-right: 8px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section_info_blocks .block div .line {
+  height: 2px;
+  width: 35px;
+  background-color: #ea625c;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.section_info_blocks .block div a {
+  color: #ea625c;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.section_info_blocks .block:nth-child(1), .section_info_blocks .block:nth-child(2) {
+  margin-right: 60px;
+}
+
+.section_nike_blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  width: 1000px;
+}
+
+.section_nike_blocks .block_info {
+  width: 445px;
+  padding-top: 25vh;
+}
+
+.section_nike_blocks .block_info h2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.section_nike_blocks .block_info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.section_nike_blocks .block_info div hr {
+  margin-right: 30px;
+}
+
+.section_nike_blocks .block_info div p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.section_nike_blocks .block_info button {
+  border: none;
+  padding: 10px 15px;
+  font-weight: 900;
+  color: #fff;
+  background-color: #ea625c;
+}
+
+.section_nike_blocks .block_info button:hover {
+  background-color: #e32a22;
+  cursor: pointer;
+}
+
+.section_nike_blocks .block_img {
+  height: 98vh;
+  width: 450px;
+}
+
+.section_nike_blocks .block_img img {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  padding-left: 20vw;
+  margin-top: 20vh;
+  background-image: url("../img/runners.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_block {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #fff;
+  width: 500px;
+}
+
+footer .footer_block .block_info div hr {
+  border: 1.5px solid #fff;
+}
+
+footer .footer_block .block_info div p {
+  color: #fff;
+}
+
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 15vh 85vh 60vh 40vh;
-      grid-template-rows: 15vh 85vh 60vh 40vh;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 15vh auto 140vh 130vh;
+      grid-template-rows: 15vh auto 140vh 130vh;
   overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */

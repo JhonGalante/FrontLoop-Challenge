@@ -1,0 +1,26 @@
+footer {
+    padding-left: 20vw;
+    margin-top: 20vh;
+    background-image: url("../img/runners.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    .footer_block {
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+        color: #fff;
+        width: 500px;
+        .block_info {
+            div {
+                hr{
+                    border: 1.5px solid #fff;
+                }
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

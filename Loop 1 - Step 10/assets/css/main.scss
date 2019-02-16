@@ -2,10 +2,12 @@
 @import 'nav';
 @import 'header';
 @import 'main-font';
+@import 'section';
+@import 'footer';
 
 body{
     display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: 15vh 85vh 60vh 40vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh auto 140vh 130vh;
     overflow-x: hidden;
 }
